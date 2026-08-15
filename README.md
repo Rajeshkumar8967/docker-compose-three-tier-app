@@ -5,16 +5,35 @@
 This project demonstrates containerization and deployment of a
 three-tier web application using Docker Compose.
 
+# Docker Compose Three-Tier Application
+
+A containerized three-tier web application demonstrating **Docker, Docker Compose, container networking, persistent storage, service health checks, and multi-container orchestration**.
+
 ## Architecture
 
-Frontend:
-Nginx + HTML
+```text
+                         Browser
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │    Nginx      │
+                    │   Frontend    │
+                    │    :8080      │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │ Node.js +     │
+                    │ Express API   │
+                    │   :5000       │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │    MongoDB    │
+                    │     :27017    │
+                    └───────────────┘
 
-Backend:
-Node.js + Express
-
-Database:
-MongoDB
 
 ## Architecture Flow
 
