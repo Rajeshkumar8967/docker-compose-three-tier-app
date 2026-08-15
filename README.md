@@ -11,7 +11,7 @@ A containerized three-tier web application demonstrating **Docker, Docker Compos
 
 ## Architecture
 
-```text
+-
                          Browser
                             │
                             ▼
